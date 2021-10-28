@@ -13,7 +13,7 @@ func RegisterControllers() {
 	http.Handle("/users/", *uc)
 }
 
-func encodeResopnseAsJSON(data interface{}, w io.Writer) {
+func encodeResponseAsJSON(data interface{}, w io.Writer) {
 	enc := json.NewEncoder(w)
 	enc.Encode(data)
 }
